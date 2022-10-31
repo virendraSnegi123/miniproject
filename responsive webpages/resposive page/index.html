@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resposive page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.jpg" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="menu.jpg" alt="" class="menu_icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br> Daulshock 4 </h2>
+                <h3>Wireless Controller for PlayStation 4</h3>
+                <p>(Compatible /Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Boy NOw <img src="arrow.png" alt=""></button>
+            </div>
+
+            <div class="col-2">
+                <img src="controller.png" alt="" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="plus.png" alt="">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="socil-links">
+            <ul>
+                <li style="--clr:#1877f2;">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li style="--clr:#1da1f2;">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li style="--clr:#fd0bc9;">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

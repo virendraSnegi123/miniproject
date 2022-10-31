@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virendra fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container1">
+        <div>
+            <header class="header">
+
+                <div class="left">
+                    <img src="image/gymlogo.png" alt="logo">
+                </div>
+
+                <div class="mid">
+                    <ul class="navbar">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="trainer.html">Trainer </a></li>
+                        <li><a href="schedul.html">Schedules</a></li>
+                        <li><a href="#">Page</a>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="trainer.html">Trainer </a></li>
+                                <li><a href="schedul.html">Schedules</a></li>
+                                <li><a href="contct.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contct.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#SinginModal">Sing In</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#SingupModal">Sing Up</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#RegisterModal">Register</button>
+
+                </div>
+                <!-- Modal -->
+                <!-- sing in -->
+                <div class="modal fade" id="SinginModal" tabindex="-1" aria-labelledby="SinginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="SinginModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" aria-label="email">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password" aria-label="password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sing up -->
+                <div class="modal fade" id="SingupModal" tabindex="-1" aria-labelledby="SingupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="SingupModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="exampleInputfirstname" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputfirstname" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" aria-label="email">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password" aria-label="password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign up</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- register start -->
+                <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="RegisterModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="exampleInputfirstname" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputfirstname" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="exampleInputEmail1" class="form-label">Email </label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" aria-label="email" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputAadharNO" class="form-label">Aadhar NO. </label>
+                                            <input type="tel" class="form-control" id="exampleInputAadharNO" aria-describedby="emailHelp" placeholder="XXXX-XXXX-XXXX" aria-label="Aadhar NO" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="exampleInputGender" class="form-label">Gender</label>
+                                            <select class="form-select" aria-label="Default select Gender">
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Others</option>
+                                          </select>
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputPhoneNO" class="form-label">Phone NO. </label>
+                                            <input type="tel" class="form-control" id="exampleInputPhoneNO" aria-describedby="emailHelp" placeholder="XXXXX-XXXXX" aria-label="Phone NO" pattern="[0-9]{5}-[0-9]{5}" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputAge" class="form-label">Age </label>
+                                            <input type="tel" class="form-control" id="exampleInputAge" aria-describedby="emailHelp" placeholder="XX" aria-label="Age" pattern="[0-9]{2}" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputAddress1" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="exampleInputAddress1" placeholder="Enter your address" aria-label="text">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="exampleInputCity" class="form-label">City</label>
+                                            <input type="text" class="form-control" placeholder="City" aria-label="City">
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputCity" class="form-label">State</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                            <option value="Assam">Assam</option>
+                                            <option value="Bihar">Bihar</option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                            <option value="Daman and Diu">Daman and Diu</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Lakshadweep">Lakshadweep</option>
+                                            <option value="Puducherry">Puducherry</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Haryana">Haryana</option>
+                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                            <option value="Jharkhand">Jharkhand</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Manipur">Manipur</option>
+                                            <option value="Meghalaya">Meghalaya</option>
+                                            <option value="Mizoram">Mizoram</option>
+                                            <option value="Nagaland">Nagaland</option>
+                                            <option value="Odisha">Odisha</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Sikkim">Sikkim</option>
+                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="Tripura">Tripura</option>
+                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            <option value="Uttarakhand" selected>Uttarakhand</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                          </select>
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputzipcode" class="form-label">Zip Code</label>
+                                            <input type="text" class="form-control" placeholder="Zipcode" aria-label="Zip code">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">It's my complete information.</label>
+                                    </div>
+                                    <div class="gymfees">
+                                        <h2> GYM FEES:-800/manth, </h2>
+                                    </div>
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <button class="btn btn-primary" type="button">Register</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- register end -->
+            </header>
+            <div class="front">
+                <h2>WORK HARDER, GET STRONGER</h2>
+                <p>EASY WITH <span> OUR GYM</span></p>
+
+
+            </div>
+            <a href="#" id="Arrow_up"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"  fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                </svg> </a>
+
+        </div>
+    </div>
+
+
+    <!-- ABOUT PAGE   CONTAINER 2 -->
+    <div class="aboutus1">
+        <div class="paragraph">
+            <p>ABOUT US</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="grid">
+            <div class="griditme" id="item1">
+                <img src="image/features-first-icon.png" alt="">
+                <h3>Basic Fitness</h3>
+                <p>Please do not re-distribute this template<br> ZIP file on any template collection website. <br>This is not allowed.</p>
+                <a href="#">DISCOVER MORE</a>
+            </div>
+            <div class="griditme" id="item2"> <img src="image/features-first-icon.png" alt="">
+                <h3>Advanced Muscle Course</h3>
+                <p>You may want to browse through Digital Marketing<br> or Corporate HTML CSS templates on our website.</p>
+                <a href="#">DISCOVER MORE</a>
+            </div>
+            <div class="griditme" id="item3">
+                <img src="image/features-first-icon.png" alt="">
+                <h3>New Gym Training</h3>
+                <p>If you wish to support TemplateMo website via<br> PayPal, please feel free to contact us.<br> We appreciate it a lot.</p>
+                <a href="#">DISCOVER MORE</a>
+            </div>
+            <div class="griditme" id="item4"> <img src="image/features-first-icon.png" alt="">
+                <h3>Yoga Training</h3>
+                <p>This template is built on Bootstrap v4.3.1 framework.<br> It is easy to adapt the columns and sections.</p>
+                <a href="#">DISCOVER MORE</a>
+            </div>
+            <div class="griditme" id="item5"> <img src="image/features-first-icon.png" alt="">
+                <h3>Basic Muscle Course</h3>
+                <p>Credit goes to Pexels website for images and<br>video background used in this HTML template.</p>
+                <a href="#">DISCOVER MORE</a>
+            </div>
+            <div class="griditme" id="item6"> <img src="image/features-first-icon.png" alt="">
+                <h3>Body Building Course</h3>
+                <p>Suspendisse fringilla et nisi et mattis.<br> Curabitur sed finibus nisi. Integer nibh sapien, <br> vehicula et auctor.</p>
+                <a href="#">DISCOVER MORE</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SERVICES and CONTAINER 3 , container 4-->
+
+    <div class="container3">
+        <div class="paragraph">
+            <h2>WHAT WE DO?</h2>
+            <p>PUSH YOUR LIMITS FORWARD</p>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="grid">
+            <div class="griditem">
+                <div class="items" id="items1">
+                    <img src="image/services1.png" alt="">
+                </div>
+
+                <div class="items" id="items2">
+                    <h3>Personal training</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis.</p>
+                    <a href="#">EXPLORE</a>
+                </div>
+
+                <div class="items" id="items3">
+                    <img src="image/services2.jpg" alt="">
+                </div>
+
+                <div class="items" id="items4">
+                    <h3>Group fitness classes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis.</p>
+                    <a href="#">EXPLORE</a>
+                </div>
+
+                <div class="items" id="items5">
+                    <h3>Strength training</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis.</p>
+                    <a href="#">EXPLORE</a>
+                </div>
+
+                <div class="items" id="items6">
+                    <img src="image/services3.jpg" alt="">
+                </div>
+
+                <div class="items" id="items7">
+                    <h3>Body building</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis.</p>
+                    <a href="#">EXPLORE</a>
+                </div>
+
+                <div class="items" id="items8">
+                    <img src="image/services4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- EXPERT TRAINERS and container 5, container 6 -->
+
+    <!-- CONTAINER 5 -->
+
+    <div class="container5">
+        <div class="paragraph">
+            <h2>Expert Trainer</h2>
+            <p>TRAIN WITH EXPERTS</p>
+        </div>
+    </div>
+    <!--  CONTAINER 6 -->
+
+    <div class="contaiter6">
+        <div class="griditems">
+            <div class="items" id="itmes1">
+                <img src="image/team-1.jpg" alt="">
+            </div>
+            <div class="items" id="itmes2">
+                <img src="image/team-6.png" alt="">
+            </div>
+            <div class="items" id="itmes3">
+                <img src="image/team-2.jpg" alt="">
+            </div>
+            <div class="items" id="itmes4">
+                <img src="image/team-3.png" alt="">
+            </div>
+            <div class="items" id="itmes5">
+                <h2> Justin Daniel</h2>
+                <h3> TRAINER</h3>
+
+                <p> Far far away, behind the word mountains,<br> far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+            <div class="items" id="itmes6">
+                <h2> Justin Daniel</h2>
+                <h3> TRAINER</h3>
+
+                <p> Far far away, behind the word mountains,<br> far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+            <div class="items" id="itmes7">
+                <h2> Justin Daniel</h2>
+                <h3> TRAINER</h3>
+
+                <p> Far far away, behind the word mountains,<br> far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+            <div class="items" id="itmes8">
+                <h2> Justin Daniel</h2>
+                <h3> TRAINER</h3>
+
+                <p> Far far away, behind the word<br> mountains, far from the countries <br>Vokalia and Consonantia there <br>live the blind texts.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCHEDULES and container 7, container 8 -->
+
+    <div class="container7">
+        <div class="paragraph">
+            <p>SCHEDULES</p>
+        </div>
+    </div>
+
+    <div class="container8">
+
+        <div class="Sdaylist">
+            <ul class="Sdaylist1">
+                <li class="active">Monday</li>
+                <li class="Sday">Tuesday</li>
+                <li class="Sday">Wednesday</li>
+                <li class="Sday">Thursday</li>
+                <li class="Sday">Friday</li>
+
+            </ul>
+        </div>
+
+
+        <table border="2" cellspacing="0" cellpadding="50">
+
+            <tr class="tbody">
+                <th class="tbox">Fitness Class</th>
+                <th class="tbox">10:00AM - 11:30AM</th>
+                <th class="tbox">-</th>
+                <th class="tbox">William G. Stewart</th>
+
+            </tr>
+
+            <tr>
+                <td class="tbox">Muscle Training</td>
+                <td class="tbox">-</td>
+                <td class="tbox">-</td>
+                <td class="tbox">Paul D. Newman</td>
+
+            </tr>
+            <tr>
+                <td class="tbox">Body Building</td>
+                <td class="tbox">-</td>
+                <td class="tbox">2:00PM - 3:30PM</td>
+                <td class="tbox">Boyd C. Harris</td>
+
+            </tr>
+            <tr>
+                <td class="tbox">Yoga Training Class</td>
+                <td class="tbox">-</td>
+                <td class="tbox">-</td>
+                <td class="tbox">Hector T. Daigle</td>
+
+            </tr>
+            <tr>
+                <td class="tbox">Advanced Training</td>
+                <td class="tbox">-</td>
+                <td class="tbox">-</td>
+                <td class="tbox">Bret D. Bowers</td>
+
+            </tr>
+        </table>
+    </div>
+
+    <!-- Contact Us and container 9,  -->
+
+    <div class="container_nine">
+        <div class="paragraph">
+            <h2>Contact Us</h2>
+            <p>Get In Touch</p>
+        </div>
+    </div>
+
+    <div class="container9">
+        <div class="contctfrm">
+            <form>
+                <input type="text" placeholder="Enter Your Name" id="name" name="my name">
+                <input type="text" placeholder="Enter Your  Last Name" id="name" name="my  last name">
+                <input type="text" placeholder="Enter Your Subjuct" id="sub" name="my subject">
+                <input type="email" placeholder="Email" id="email" name="my email">
+                <textarea name="text" placeholder="Write your message here:-" id="textarea" cols="30" rows="12"></textarea>
+                <input type="submit" value="SEND MESSAGE">
+            </form>
+        </div>
+    </div>
+    <!--Strat first footer-->
+    <div class="container-fluid bg-dark text-white" width="200%">
+        <footer class="row row-cols-5 py-5  border-top">
+            <div class="col-lg-3 col-md-3 col-12">
+                <p class="text-muted" id="add1">
+                    <h5>Address</h5>
+                    <address class="text-muted">
+                        vidhyavihar kargichawak<br>
+                        dehradun Uttrakhand,<br>
+                        pin - 2480001,<br>
+                        phone No - 9389234567<br>
+                                   7248289032<br>
+
+                    </address>
+                </p>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-12">
+                <h5>Menu</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-muted">About</a></li>
+                    <li class="nav-item mb-2"><a href="schedul.html" class="nav-link p-0 text-muted">Schedule</a></li>
+                    <li class="nav-item mb-2"><a href="trainer.html" class="nav-link p-0 text-muted">Trainer</a></li>
+                    <li class="nav-item mb-2"><a href="contct.html" class="nav-link p-0 text-muted">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-12">
+                <h5 id="headingfollow">Follow With Us</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">facebook</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">whatsaap</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">insagram</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">twitter</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <h5 id="headingMap">Map</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6889.972961075773!2d78.02569979999998!3d30.29444650000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909299d6f0bfe57%3A0x3839e688ee52605f!2suttrakhand%20labour%20court%20(Garhwal%20Region)!5e0!3m2!1sen!2sin!4v1645321184509!5m2!1sen!2sin"
+                    width="95%" height="115%" style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    </div>
+    <!-- End first footer -->
+    <!--Strat Second Footer -->
+
+    <div class="container-fluid bg-dark opacity-75">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 ">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="image/gymlogo.png" alt="logo">
+                <span class="text-white " id="copyright">© 2022 Company, Inc</span>
+            </div>
+            <p class="footer_contact text-white" id="footerNo">+919389827873</p>
+            <a href="contct.html" class="btn btn-outline-primary" id="contactbtn">CONTACT</a>
+        </footer>
+    </div>
+
+
+    <!--End second Footer-->
+</body>
+
+</html>

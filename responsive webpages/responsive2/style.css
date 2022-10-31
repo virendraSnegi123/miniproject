@@ -1,0 +1,87 @@
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #main {
+            width: 100%;
+            height: 450px;
+            background: linear-gradient(pink, orange);
+        }
+        
+        #main h1 {
+            font-size: 2.5rem;
+            color: black;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        
+        #main .text,
+        .img {
+            width: 50%;
+            height: 400px;
+            background: linear-gradient(rgb(255, 255, 193), rgb(186, 186, 255));
+            float: left;
+            border: 1px solid #ddd
+        }
+        
+        .text p {
+            font-size: 1.7rem;
+            padding: 20px;
+            text-align: justify;
+        }
+        
+        .img img {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        /* Responsive */
+        
+        @media (max-width:786px) {
+            #main h1 {
+                color: blue;
+            }
+            .text p {
+                font-size: 1.2rem;
+            }
+            .img img {
+                width: 100%;
+                height: 350px;
+            }
+        }
+        /* Responsive Phone */
+        
+        @media (max-width:480px) {
+            #main h1 {
+                color: white;
+                font-size: 2em;
+                font-weight: bold;
+            }
+            #main .text,
+            .img {
+                width: 100%;
+            }
+            #main .text {
+                height: auto;
+            }
+            .text p {
+                font-size: 1.1rem;
+            }
+            #main .img {
+                height: auto;
+            }
+            #main .img img {
+                height: auto;
+            }
+        }

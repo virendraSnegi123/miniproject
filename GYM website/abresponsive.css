@@ -1,0 +1,271 @@
+/* container */
+
+.container1 {
+    width: 100vw;
+}
+
+
+/* left */
+
+.left {
+    /* position: sticky; */
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+
+.left img {
+    width: 42px;
+    filter: invert(100%);
+    margin-left: -28px;
+}
+
+.left div {
+    color: white;
+    margin-left: -116%;
+}
+
+.navbar li {
+    margin-top: -24px;
+    display: flex;
+}
+
+a.active {
+    margin-top: 23%;
+}
+
+
+/* mid */
+
+
+/* right */
+
+
+/* item */
+
+.item {
+    margin-top: -8%;
+    font-size: 17px;
+}
+
+
+/* container 2 */
+
+.lineimg {
+    left: 38%;
+}
+
+.paragraph {
+    width: 65%;
+}
+
+.container2 p {
+    margin-left: -43%;
+    font-size: 17px;
+}
+
+.container2 img {
+    width: 66px;
+}
+
+
+/* lineimg */
+
+
+/* container 3 */
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+
+
+/* Grid item */
+
+
+/* ITEM 1 */
+
+.grid #item1 h3 {
+    font-size: 1.4rem;
+    position: relative;
+    top: -114px;
+    left: 26%;
+    padding: 2%;
+}
+
+.grid #item1 p {
+    position: relative;
+    top: -126px;
+    left: 96px;
+    font-size: 1.3rem;
+    padding: 2%;
+    width: 77%;
+}
+
+.grid #item1 a {
+    position: relative;
+    top: -118px;
+    left: 98px;
+    padding: 2%;
+}
+
+
+/* ITEM 2 */
+
+.grid #item2 h3 {
+    font-size: 1.4rem;
+    position: relative;
+    top: -114px;
+    left: 26%;
+    padding: 2%;
+}
+
+.grid #item2 p {
+    position: relative;
+    top: -126px;
+    left: 96px;
+    font-size: 1.3rem;
+    padding: 2%;
+    width: 77%;
+}
+
+.grid #item2 a {
+    position: relative;
+    top: -118px;
+    left: 98px;
+    padding: 2%;
+}
+
+
+/* ITEM 3 */
+
+.grid #item3 h3 {
+    font-size: 1.4rem;
+    position: relative;
+    top: -114px;
+    left: 26%;
+    padding: 2%;
+}
+
+.grid #item3 p {
+    position: relative;
+    top: -126px;
+    left: 96px;
+    font-size: 1.3rem;
+    padding: 2%;
+    width: 77%;
+}
+
+.grid #item3 a {
+    position: relative;
+    top: -118px;
+    left: 98px;
+    padding: 2%;
+}
+
+
+/* ITEM 4 */
+
+.grid #item4 h3 {
+    font-size: 1.4rem;
+    position: relative;
+    top: -114px;
+    left: 26%;
+    padding: 2%;
+}
+
+.grid #item4 p {
+    position: relative;
+    top: -126px;
+    left: 96px;
+    font-size: 1.3rem;
+    padding: 2%;
+    width: 77%;
+}
+
+.grid #item4 a {
+    position: relative;
+    top: -118px;
+    left: 98px;
+    padding: 2%;
+}
+
+
+/* ITEM 5 */
+
+.grid #item5 h3 {
+    font-size: 1.4rem;
+    position: relative;
+    top: -114px;
+    left: 26%;
+    padding: 2%;
+}
+
+.grid #item5 p {
+    position: relative;
+    top: -126px;
+    left: 96px;
+    font-size: 1.3rem;
+    padding: 2%;
+    width: 77%;
+}
+
+.grid #item5 a {
+    position: relative;
+    top: -118px;
+    left: 98px;
+    padding: 2%;
+}
+
+
+/*  ITEM 6 */
+
+.grid #item6 h3 {
+    font-size: 1.4rem;
+    position: relative;
+    top: -114px;
+    left: 26%;
+    padding: 2%;
+}
+
+.grid #item6 p {
+    position: relative;
+    top: -126px;
+    left: 96px;
+    font-size: 1.3rem;
+    padding: 2%;
+    width: 77%;
+}
+
+.grid #item6 a {
+    position: relative;
+    top: -118px;
+    left: 98px;
+    padding: 2%;
+}
+
+
+/* Container 4 */
+
+.container4 {
+    position: relative;
+    top: 57rem;
+    height: 400px;
+}
+
+.gridfooter {
+    /* width: 25%; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 174px 120px 120px 120px;
+    grid-template-rows: 400px;
+    grid-gap: 7px;
+}
+
+.items {
+    background-color: rgb(74 74 74);
+}

@@ -1,0 +1,419 @@
+:root {
+    --whitegrey: rgb(173, 173, 173);
+    --blackgrey: rgb(78, 78, 78);
+    --lightsky: rgb(125, 155, 163);
+    --white: white;
+    --lightgrey: #cecece;
+    --textshado: #e0bea0;
+    --casari: #ed563b;
+    --black: #151515;
+    --blackred: #555555;
+    --orange: #f36100;
+    --crimson: crimson;
+    --red: red;
+    --skyblue: #5edef5;
+    margin-top: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 1500px;
+}
+
+.container1 {
+    margin: 0px;
+    padding: 0px;
+    height: 370px;
+    background-image: url('image/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    position: sticky;
+    left: 0%;
+    top: 0%;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.container1 .left img {
+    height: 60px;
+    width: 260px;
+    margin: 17px 0px 0px -40px;
+}
+
+.mid {
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.navbar li a {
+    color: var(--whitegrey);
+    text-decoration: none;
+    padding: 13px 11px;
+    font-size: 20px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: var(--white);
+}
+
+.navbar li ul {
+    display: none;
+    position: absolute;
+    top: auto;
+    left: 74%;
+    background-color: var(--white);
+    padding: 0px;
+    border-radius: 0px 0px 4px 4px;
+    width: 115px;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+.navbar li ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.navbar li ul li a {
+    text-align: center;
+    margin: -9px;
+    font-size: 17px;
+    color: var(--black);
+}
+
+.navbar li ul li:hover {
+    background-color: var(--lightgrey);
+}
+
+.right {
+    position: absolute;
+    right: 32px;
+    top: 35px;
+    display: inline-block;
+}
+
+
+/* OUR TEAM  */
+
+.Trainer {
+    margin: 12%;
+    text-align: center;
+}
+
+.Trainer1 {
+    color: var(--white);
+    height: 88px;
+}
+
+.Trainer1 h2 {
+    text-align: center;
+    font-size: 72px;
+    text-shadow: 4px 25px 7px var(--textshado);
+    transition: all 1s ease-in-out;
+}
+
+.Trainer1 h2:hover {
+    transform: translate(10px, 10px);
+}
+
+.Trainer1 h2 span {
+    color: var(--casari);
+    font-size: 72px;
+    text-shadow: 4px 25px 7px var(--textshado);
+    transition: all 1s ease-in-out;
+}
+
+.Trainer1 h2 span {
+    transform: translate(10px, 10px);
+}
+
+.Trainer a::after {
+    content: ">";
+    margin-left: 15px;
+    color: var(--white);
+}
+
+.Trainer a {
+    font-size: 22px;
+    color: var(--white);
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Trainer span {
+    font-size: 22px;
+    color: var(--casari);
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+/* Arrow_up */
+
+#Arrow_up {
+    position: fixed;
+    top: 30rem;
+    left: 81rem;
+    z-index: 3;
+    color: var(--white);
+}
+
+
+/* CONTAINER 2 */
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+    height: 159px;
+}
+
+.paragraph h2 {
+    font-size: 26px;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 13%;
+    position: relative;
+    right: 12re;
+    right: -2em;
+    top: 0em;
+}
+
+.paragraph p {
+    font-size: 41px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    right: 12re;
+    right: 1em;
+    top: 0em;
+}
+
+
+/* conatainer 3 */
+
+.contaiter3 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blackgrey);
+    height: 800px;
+    width: 100vw;
+    transition: all 1.3s ease-in-out;
+}
+
+.contaiter3:hover {
+    background: var(--black);
+}
+
+.griditems {
+    width: 94%;
+    display: grid;
+    grid-template-columns: 294px 294px 286px 280px;
+    grid-template-rows: 450px 200px;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.griditems:hover {
+    transform: translateX(15px);
+}
+
+.items {
+    background: var(--black);
+    position: relative;
+    right: 15%;
+    text-align: center;
+    color: var(--white);
+    line-height: 25px;
+    transition: all 1.3s ease-in-out;
+}
+
+.items:hover {
+    background: var(--black);
+}
+
+.contaiter3 #itmes2 img {
+    background: no-repeat;
+    background: cover;
+    background-size: cover;
+    height: 89%;
+    width: 100%;
+}
+
+.contaiter3 #itmes3 img {
+    background: no-repeat;
+    background: cover;
+    background-size: cover;
+    height: 89%;
+    width: 100%;
+}
+
+.contaiter3 #itmes4 img {
+    background: no-repeat;
+    background: cover;
+    background-size: cover;
+    height: 89%;
+    width: 100%;
+}
+
+
+/* ITEMS 5 */
+
+.items h2:hover {
+    color: var(--orange);
+}
+
+.items h3:hover {
+    color: var(--orange);
+}
+
+.items p:hover {
+    color: var(--skyblue);
+}
+
+#itmes5 h2 {
+    position: relative;
+    top: 7%;
+    left: 0%;
+}
+
+#itmes5 h3 {
+    position: relative;
+    top: 10%;
+    left: 0%;
+}
+
+#itmes5 p {
+    position: relative;
+    top: 17%;
+    left: 0%;
+}
+
+
+/* ITEMS 6 */
+
+#itmes6 h2 {
+    position: relative;
+    top: 7%;
+    left: 0%;
+}
+
+#itmes6 h3 {
+    position: relative;
+    top: 10%;
+    left: 0%;
+}
+
+#itmes6 p {
+    position: relative;
+    top: 17%;
+    left: 0%;
+}
+
+
+/* ITEMS 7 */
+
+#itmes7 h2 {
+    position: relative;
+    top: 7%;
+    left: 0%;
+}
+
+#itmes7 h3 {
+    position: relative;
+    top: 10%;
+    left: 0%;
+}
+
+#itmes7 p {
+    position: relative;
+    top: 17%;
+    left: 0%;
+}
+
+
+/* ITEMS 8 */
+
+#itmes8 h2 {
+    position: relative;
+    top: 7%;
+    left: 10%;
+}
+
+#itmes8 h3 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+#itmes8 p {
+    position: relative;
+    top: 17%;
+    left: 10%;
+}
+
+
+/* footer */
+
+.col #add1 {
+    margin-top: -14px;
+}
+
+#headingfollow {
+    margin-left: -42px;
+}
+
+#headingMap {
+    margin: -4% 0% 0% 130px;
+}
+
+
+/* Second Footer */
+
+.footer_contact {
+    margin: 0% 0% 0% 45%;
+}
+
+#copyright {
+    margin-left: 26%;
+}
+
+#footerNo {
+    position: relative;
+    top: 5%;
+}
+
+#contactbtn {
+    margin-right: 5%;
+}
